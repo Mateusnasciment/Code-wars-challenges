@@ -8,7 +8,7 @@ export function spinWords(words: string): string {
     for(let word of splitedWorlds) {
         const newWord = word.length >= 5 ? strReverse(word) : word
     
-        newWords.push(newWord)
+        newWords.push(newWord: any)
     }
 
     return newWords.join(" ")
@@ -19,3 +19,10 @@ export function spinWords(words: string): string {
     //   se a palavra tiver 5 ou mais caracteres, usa a função "strReverse" para invertê-la. 
     //  A função "strReverse" usa métodos como "split", "reverse" e "join" para dividir, inverter e juntar a string invertida.
     //  Após iterar sobre todas as palavras, a função "spinWords" junta as palavras invertidas e não invertidas de volta em uma string e retorna esse valor.
+
+
+    export const spinWords = (words: string): string => words.split(' ')
+                                                        .map(m => m.length >= 5 
+                                                             ? m.split('').reverse().join('') 
+                                                             : m)
+                                                        .join(' ')
