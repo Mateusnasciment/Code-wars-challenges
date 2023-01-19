@@ -3,7 +3,6 @@ import { MORSE_CODE } from './preloaded';
   code = code.trim();
   let words = code.split("   ");
   let decoded = "";
-
   for (let word of words) {
     let letters = word.split(" ");
     for (let letter of letters) {
