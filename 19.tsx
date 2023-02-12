@@ -14,5 +14,6 @@ Example(Input --> Output):
  * @returns A function that takes a string and returns a string.
  */
 export function reverseWords(str: string): string {
-    return str.split(" ").map(word => word.split("").reverse().join("")).join(" ");
+    return str.split(" ").map(word => word.split("").reverse().join(""));
   }
+Não conseguir terminar
